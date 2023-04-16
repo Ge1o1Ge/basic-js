@@ -39,13 +39,11 @@ function getSeason(date, ...rest) {
     return f;
   }
   catch (e) {
-    return e.message;
+    throw e;
   }
 
 }
 
-let dT = new Date(840, 0, 6, 9, 20, 31, 683)
-console.log(getSeason('fff'))
 
 module.exports = {
   getSeason
